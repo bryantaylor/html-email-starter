@@ -4,7 +4,7 @@
   "testing": {
     "from": "Email Address to send from",
     "to": "Who do you want to send to? Comma separated",
-    "subject": "Subject for test email"
+    "subject": "{{Client Name}} Test {{Number}}"
   },
 
   "auth": {
