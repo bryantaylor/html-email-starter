@@ -1,5 +1,5 @@
 {
-  "name": "Gulp-Email-Creator",
+  "name": "Ripe-Email-Worklow",
   "version": "1.0.1",
   "description": "A gulp workflow for easing the creation of HTML emails",
   "main": "gulpfile.js",
@@ -8,18 +8,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/darylldoyle/Gulp-Email-Creator.git"
+    "url": "https://github.com/ripestudios/ripe-starter_email.git"
   },
   "keywords": [
     "GulpJS",
     "Email"
   ],
-  "author": "Daryll Doyle",
+  "author": "Paul Best",
   "license": "apache2",
   "bugs": {
-    "url": "https://github.com/darylldoyle/Gulp-Email-Creator/issues"
+    "url": "https://github.com/ripestudios/ripe-starter_email/issues"
   },
-  "homepage": "https://github.com/darylldoyle/Gulp-Email-Creator",
+  "homepage": "https://github.com/ripestudios/ripe-starter_email",
   "devDependencies": {
     "browser-sync": "^1.8.1",
     "gulp": "^3.8.10",
