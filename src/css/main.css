@@ -85,18 +85,21 @@ table.footer-wrap {
 
 .footer-wrap .container p {
   font-size: 12px;
-  color: #666; }
+  color: #666666; }
 
 table.footer-wrap a {
-  color: #999; }
+  color: #999999; }
 
 /* -------------------------------------
 		TYPOGRAPHY
 ------------------------------------- */
 h1, h2, h3 {
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  color: #000;
-  margin: 40px 0 10px;
+  color: #000000;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
   line-height: 1.2;
   font-weight: 200; }
 
