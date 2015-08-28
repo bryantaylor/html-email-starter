@@ -17,9 +17,11 @@ The gulpfile is the engine of the workflow.  It does the following:
 
 #Design Resources
 
-See [MailChimp's Email Blueprints](https://github.com/mailchimp/Email-Blueprints) or [Responsive Email Patterns](http://responsiveemailpatterns.com/).  
+* Read through [this](https://www.campaignmonitor.com/resources/will-it-work/guidelines/) and [this](https://litmus.com/blog/html-email-coding-101-infographic) before you start any coding.  
+* Use tables to create your buttons, include a VML hack for Outlook.  [Code sample here](https://gist.github.com/elidickinson/9424116#file-html_email_buttons_1-html)
+* See [MailChimp's Email Blueprints](https://github.com/mailchimp/Email-Blueprints) or [Responsive Email Patterns](http://responsiveemailpatterns.com/) for design patterns.  
 
-For information on support for coding practices, check out Campaign Monitor's [Design Guidelines](https://www.campaignmonitor.com/dev-resources/will-it-work/), which features a handy table on [CSS support](https://www.campaignmonitor.com/css/)
+For more information on web fonts, image blocking, width, CSS support, etc check out Campaign Monitor's [Design Guidelines](https://www.campaignmonitor.com/dev-resources/will-it-work/), which features a handy table on [CSS support](https://www.campaignmonitor.com/css/)
 
 # Installation
 
