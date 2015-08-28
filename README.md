@@ -6,6 +6,10 @@ Gulp Email Creator is a gulp workflow inspired by [Lee Munroe's](https://github.
 
 It aims to help speed up email template production by allowing you to use SCSS and inlining the generated CSS for you.
 
+#Design Resources
+
+See [MailChimp's Email Blueprints](https://github.com/mailchimp/Email-Blueprints) or [Responsive Email Patterns](http://responsiveemailpatterns.com/).  For information on support for coding practices, check out Campaign Monitor's [CSS guide](https://www.campaignmonitor.com/css/) and their [Design Guidelines](https://www.campaignmonitor.com/dev-resources/will-it-work/)
+
 # Installation
 
 You need to have both [Node.js](http://nodejs.org/) and [Gulp.js](http://gulpjs.com/) installed . 
