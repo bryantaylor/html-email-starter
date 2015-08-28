@@ -12,6 +12,7 @@ var util = require('gulp-util');
 var nodemailer = require('nodemailer');
 var fs = require('fs');
 var html_strip = require('htmlstrip-native');
+var jade = require('gulp-jade');
 
 // Include the config
 var config = require('./config.json');
@@ -24,6 +25,15 @@ gulp.task('sass', function() {
     .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
     .pipe(gulp.dest('src/css'))
     .pipe(reload({stream:true}));
+});
+
+// Compile Our HTML
+gulp.task('jade', function() {
+  gulp.src('src/jade/*.jade')
+    .pipe(jade({
+      pretty: true
+    }))
+    .pipe(gulp.dest('./src/html/'))
 });
 
 // BrowserSync
@@ -49,6 +59,7 @@ gulp.task('build', function() {
 
 // Watch Files For Changes
 gulp.task('watch', function() {
+    gulp.watch('src/jade/*.jade', ['jade']);
     gulp.watch('src/scss/*.scss', ['sass']);
     gulp.watch('src/html/*.html', ['build']);
     gulp.watch('src/css/*.css', ['build']);

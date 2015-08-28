@@ -1,4 +1,6 @@
-# Gulp-Email-Creator
+# ripe's starter email
+
+Starter Email is based on the Gulp Email Creator by [Daryll Dole's](https://github.com/darylldoyle/Gulp-Email-Creator).   
 
 Gulp Email Creator is a gulp workflow inspired by [Lee Munroe's](https://github.com/leemunroe) [grunt-email-design](https://github.com/leemunroe/grunt-email-design)  workflow.
 
