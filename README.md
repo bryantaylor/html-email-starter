@@ -8,12 +8,12 @@ It aims to help speed up email template production by allowing you to use SCSS a
 
 The gulpfile is the engine of the workflow.  It does the following:
 
-*Compiles templates in Jade to HTML
-*Processes SCSS into CSS
-*Inlines CSS into HTML via MailChimp Inliner
-*Outputs inlined CSS to an `.\/output/` directory
-*Has a gulp task to automatically send test emails via [Mailgun](http://mailgun.com)
-*Sends test emails to [Litmus](http://litmus.com) via a gulp task 
+* Compiles templates in Jade to HTML
+* Processes SCSS into CSS
+* Inlines CSS into HTML via MailChimp Inliner
+* Outputs inlined CSS to an `.\/output/` directory
+* Has a gulp task to automatically send test emails via [Mailgun](http://mailgun.com)
+* Sends test emails to [Litmus](http://litmus.com) via a gulp task 
 
 #Design Resources
 
