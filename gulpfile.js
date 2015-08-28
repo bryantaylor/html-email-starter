@@ -11,7 +11,8 @@ var inlinesource = require('gulp-inline-source');
 var util = require('gulp-util');
 var nodemailer = require('nodemailer');
 var fs = require('fs');
-var html_strip = require('htmlstrip-native');
+//var html_strip = require('htmlstrip-native');  \
+    //having errors installing on node v0.12.5, problem seems to be with node-gyp
 var jade = require('gulp-jade');
 
 // Include the config
@@ -41,7 +42,7 @@ gulp.task('browser-sync', function() {
     browserSync({
         server: {
             baseDir: "./output",
-            index: "test-template.html"
+            index: "index.html"
         },
         open: "external",
         logPrefix: "Gulp Email Creator"
@@ -66,7 +67,7 @@ gulp.task('watch', function() {
 });
 
 // Default Task
-gulp.task('default', ['sass', 'browser-sync', 'build', 'watch']);
+gulp.task('default', ['jade', 'sass', 'browser-sync', 'build', 'watch']);
 
 // Add ability to send test emails
 gulp.task('send', function () {
@@ -104,7 +105,7 @@ function sendEmail(template, recipient) {
             to: recipient, // list of receivers
             subject: config.testing.subject + ' - ' + template, // Subject line
             html: templateContent, // html body
-            text: html_strip.html_strip(templateContent, options)
+            //text: html_strip.html_strip(templateContent, options)
         };
 
         transporter.sendMail(mailOptions, function(error, info){

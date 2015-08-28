@@ -1,10 +1,10 @@
 {
-  "APIKEY": "Add your Mailchimp API Key",
+  "APIKEY": "ea72a54f4e71c1bb6bae08f935ee9deb-us1",
 
   "testing": {
-    "from": "Email Address to send from",
-    "to": "Who do you want to send to? Comma separated",
-    "subject": "Subject for test email"
+    "from": "codemonkeys@ripe.com",
+    "to": "codemonkeys@ripe.com",
+    "subject": "{{Client Name}} {{project}} test"
   },
 
   "auth": {
