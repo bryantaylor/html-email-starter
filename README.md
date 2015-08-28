@@ -1,10 +1,8 @@
 # ripe's starter email
 
-Starter Email is based on the Gulp Email Creator by [Daryll Dole's](https://github.com/darylldoyle/Gulp-Email-Creator).   
+Starter Email is based on the Gulp Email Creator by [Daryll Dole](https://github.com/darylldoyle/Gulp-Email-Creator), which was inspired by [Lee Munroe's](https://github.com/leemunroe) [grunt-email-design](https://github.com/leemunroe/grunt-email-design)  workflow.
 
-Gulp Email Creator is a gulp workflow inspired by [Lee Munroe's](https://github.com/leemunroe) [grunt-email-design](https://github.com/leemunroe/grunt-email-design)  workflow.
-
-It aims to help speed up email template production by allowing you to use SCSS and inlining the generated CSS for you.
+It aims to help speed up email template production by allowing you to use SCSS and inlining the generated CSS for you.  We've added support for Jade to compile the markup
 
 #Design Resources
 
