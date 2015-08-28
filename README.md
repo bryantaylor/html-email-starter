@@ -8,7 +8,7 @@ It aims to help speed up email template production by allowing you to use SCSS a
 
 # Installation
 
-To use Gulp-Email-Creator you need to have both [Node.js](http://nodejs.org/) and [Gulp.js](http://gulpjs.com/) installed . 
+You need to have both [Node.js](http://nodejs.org/) and [Gulp.js](http://gulpjs.com/) installed . 
 
 You can install it by cloning this repository to a local folder and running the following from inside the directory.
 
@@ -28,7 +28,7 @@ You can get a Mailchimp API by creating one in your Mailchimp account. [Instruct
 
 # Using the package
 
-You can use the Gulp-Email-Creator workflow by creating your HTML in the `./src/html/` directory and your SCSS in the `./src/scss/` directory.
+You can use this email creator workflow by creating your HTML in the `./src/html/` directory and your SCSS in the `./src/scss/` directory.
 
 ## Compile Templates
 Running `gulp` from the terminal will build the new HTML email template into the `./output/` directory and the proceed to watch `./src/html/` and `./src/scss/` for any updates.
