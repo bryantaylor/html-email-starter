@@ -10,7 +10,7 @@ It aims to help speed up email template production by allowing you to use SCSS a
 
 See [MailChimp's Email Blueprints](https://github.com/mailchimp/Email-Blueprints) or [Responsive Email Patterns](http://responsiveemailpatterns.com/).  
 
-For information on support for coding practices, check out Campaign Monitor's [Design Guidelines](https://www.campaignmonitor.com/dev-resources/will-it-work/), which features a handy table on [CSS support](https://www.campaignmonitor.com/css/) and their
+For information on support for coding practices, check out Campaign Monitor's [Design Guidelines](https://www.campaignmonitor.com/dev-resources/will-it-work/), which features a handy table on [CSS support](https://www.campaignmonitor.com/css/)
 
 # Installation
 
