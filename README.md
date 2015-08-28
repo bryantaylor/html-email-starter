@@ -29,15 +29,14 @@ If the install fails try running the install as root. For some reason browsersyn
 
 # Configuration
 
-You need configure a few basic settings before use.
-* Rename config.default.json to config.json
+You need configure a few basic settings before use.  This tool relies on a `config.json` file
+
+* Add MailChimp API key, as this uses their free CSS inliner.  [Instructions Here](http://kb.mailchimp.com/accounts/management/about-api-keys)
+* Rename `config.default.json` to `config.json`
 * Add to/from email addresses.  This will be used by Mailgun to send tests. 
 * 'To' can have multiple email addresses.  They should be comma separated.
 * Add Mailgun credentials for testing.  These are found by click on "[Domains](https://mailgun.com/app/domains)" in your Mailgun dashboard. Login usually begins with postmaster@sandbox....
 * Add [Litmus static email address](https://litmus.com/help/testing/static-email-addresses/) to automatically send the design to a Litmus test
-
-This now uses [MailChimp's](http://mailchimp.com/) CSS inliner as I've found it to work better across browsers. You will now need a Mailchimp API key which you can add to the `config.json` file.
-You can get a Mailchimp API by creating one in your Mailchimp account. [Instructions Here](http://kb.mailchimp.com/accounts/management/about-api-keys)
 
 # Using the package
 
