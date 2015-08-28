@@ -1,8 +1,19 @@
-# ripe's starter email
+# Ripe's starter email workflow
 
-Starter Email is based on the Gulp Email Creator by [Daryll Dole](https://github.com/darylldoyle/Gulp-Email-Creator), which was inspired by [Lee Munroe's](https://github.com/leemunroe) [grunt-email-design](https://github.com/leemunroe/grunt-email-design)  workflow.
+Our "Starter Email" is based on the Gulp Email Creator by [Daryll Dole](https://github.com/darylldoyle/Gulp-Email-Creator), which was inspired by [Lee Munroe's](https://github.com/leemunroe) [grunt-email-design](https://github.com/leemunroe/grunt-email-design)  workflow.
 
 It aims to help speed up email template production by allowing you to use SCSS and inlining the generated CSS for you.  We've added support for Jade to compile the markup
+
+#Workflow Overview
+
+The gulpfile is the engine of the workflow.  It does the following:
+
+*Compiles templates in Jade to HTML
+*Processes SCSS into CSS
+*Inlines CSS into HTML via MailChimp Inliner
+*Outputs inlined CSS to an `.\/output/` directory
+*Has a gulp task to automatically send test emails via [Mailgun](http://mailgun.com)
+*Sends test emails to [Litmus](http://litmus.com) via a gulp task 
 
 #Design Resources
 
