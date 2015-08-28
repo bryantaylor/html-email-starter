@@ -11,8 +11,7 @@ var inlinesource = require('gulp-inline-source');
 var util = require('gulp-util');
 var nodemailer = require('nodemailer');
 var fs = require('fs');
-//var html_strip = require('htmlstrip-native');  \
-    //having errors installing on node v0.12.5, problem seems to be with node-gyp
+var html2plaintext = require('html2plaintext');
 var jade = require('gulp-jade');
 
 // Include the config
@@ -81,12 +80,12 @@ gulp.task('litmus', function () {
 function sendEmail(template, recipient) {
     try {
 
-        var options = {
+        /*var options = {
             include_script : false,
             include_style : false,
             compact_whitespace : true,
             include_attributes : { 'alt': true }
-        };
+        };*/
 
         var templatePath = "./output/" + template;
 
@@ -105,8 +104,10 @@ function sendEmail(template, recipient) {
             to: recipient, // list of receivers
             subject: config.testing.subject + ' - ' + template, // Subject line
             html: templateContent, // html body
-            //text: html_strip.html_strip(templateContent, options)
+            text: html2plaintext(templateContent)
         };
+
+        console.log(html2plaintext(templateContent));
 
         transporter.sendMail(mailOptions, function(error, info){
             if(error){
