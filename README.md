@@ -18,10 +18,10 @@ The gulpfile is the engine of the workflow.  It does the following:
 #Design Resources
 
 * MailChimp's [Email Design Reference](http://templates.mailchimp.com/) is a very handy resource 
-* MailChimp [Merge tags cheatsheet](http://kb.mailchimp.com/merge-tags/all-the-merge-tags-cheatsheet?_ga=1.198326381.313160508.1440767401) 
 * Read through [this](https://www.campaignmonitor.com/resources/will-it-work/guidelines/) and [this](https://litmus.com/blog/html-email-coding-101-infographic) before you start any coding. 
-* A guide to [bulletproof buttons](https://litmus.com/blog/a-guide-to-bulletproof-buttons-in-email-design) 
-* Use tables to create your buttons, include a VML hack for Outlook.  [Code sample here](https://gist.github.com/elidickinson/9424116#file-html_email_buttons_1-html)
+* Handy code snippet for buttons [here](https://gist.github.com/elidickinson/9424116#file-html_email_buttons_1-html)
+* More reading on coding buttons. [Litmus's bulletproof buttons](https://litmus.com/blog/a-guide-to-bulletproof-buttons-in-email-design) 
+* MailChimp [Merge tags cheatsheet](http://kb.mailchimp.com/merge-tags/all-the-merge-tags-cheatsheet?_ga=1.198326381.313160508.1440767401) 
 * See [MailChimp's Email Blueprints](https://github.com/mailchimp/Email-Blueprints) or [Responsive Email Patterns](http://responsiveemailpatterns.com/) for design patterns.  
 
 For more information on web fonts, image blocking, width, CSS support, etc check out Campaign Monitor's [Design Guidelines](https://www.campaignmonitor.com/dev-resources/will-it-work/), which features a handy table on [CSS support](https://www.campaignmonitor.com/css/)
