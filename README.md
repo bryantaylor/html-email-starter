@@ -46,6 +46,8 @@ You can use this email creator workflow by creating your HTML in the `./src/html
 ## Compile Templates
 Running `gulp` from the terminal will build the new HTML email template into the `./output/` directory and the proceed to watch `./src/html/` and `./src/scss/` for any updates.
 
+You can write your templates in either JADE or HTML.  The default gulp task will look for JADE template in `./src/jade/` and compile them to `./src/html`.  Any changes to HTML will build and reload via BrowserSync.  The worflow doesn't care if those changes come via compiling JADE or if you write the HTML manually.
+
 The gulpfile has browsersync built in and will reload on any HTML or CSS edit, allowing you to focus on your code.
 
 ## Sending the Template to yourself
