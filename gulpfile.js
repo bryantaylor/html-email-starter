@@ -96,7 +96,7 @@ function sendEmail(template, recipient) {
                 pass: config.auth.mailgun.pass
             }
         });
-
+   
         var templateContent = fs.readFileSync(templatePath, encoding = "utf8");
 
         var mailOptions = {
