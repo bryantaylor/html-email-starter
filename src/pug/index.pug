@@ -7,27 +7,23 @@ html(lang='en')
     // START: Email branding
     table.branding-wrap
       tr
-        td
         td.container
           div.content
             table
               tr
                 td.padding-top.padding-bottom.logo-wrap( width="280")
-                  img.logo(src="http://s18.postimg.org/gzml4dvzd/dupont_logo.gif" alt="Dupont Underground" width="280"
-  height="64")
+                  img.logo(src="http://s18.postimg.org/gzml4dvzd/dupont_logo.gif" alt="Dupont Underground" width="280" height="64")
     // END: Email branding
     table.body-wrap
       tr
-        td
         td.container(bgcolor='#ffffff')
           div.content
             // START: header
-            include _partials/header/header.jade
+            include _partials/header/header.pug
             // END: Header
             // START: body
-            include _partials/content/single-column.jade
+            include _partials/content/single-column.pug
             // End: Body
-        td
     // START: Footer
     include _partials/footer/footer
     // END: Footer

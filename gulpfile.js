@@ -12,7 +12,7 @@ var util = require('gulp-util');
 var nodemailer = require('nodemailer');
 var fs = require('fs');
 var html2plaintext = require('html2plaintext');
-var jade = require('gulp-jade');
+var pug = require('gulp-pug');
 
 // Include the config
 var config = require('./config.json');
@@ -28,9 +28,9 @@ gulp.task('sass', function() {
 });
 
 // Compile Our HTML
-gulp.task('jade', function() {
-  gulp.src('src/jade/*.jade')
-    .pipe(jade({
+gulp.task('pug', function() {
+  gulp.src('src/pug/*.pug')
+    .pipe(pug({
       pretty: true
     }))
     .pipe(gulp.dest('./src/html/'))
@@ -59,14 +59,14 @@ gulp.task('build', function() {
 
 // Watch Files For Changes
 gulp.task('watch', function() {
-    gulp.watch('src/jade/*.jade', ['jade']);
+    gulp.watch('src/pug/*.pug', ['pug']);
     gulp.watch('src/scss/*.scss', ['sass']);
     gulp.watch('src/html/*.html', ['build']);
     gulp.watch('src/css/*.css', ['build']);
 });
 
 // Default Task
-gulp.task('default', ['jade', 'sass', 'browser-sync', 'build', 'watch']);
+gulp.task('default', ['pug', 'sass', 'browser-sync', 'build', 'watch']);
 
 // Add ability to send test emails
 gulp.task('send', function () {
