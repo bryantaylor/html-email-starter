@@ -4,7 +4,7 @@ Our "Starter Email" is based on the Gulp Email Creator by [Daryll Dole](https://
 
 It aims to help speed up email template production by allowing you to use SCSS and inlining the generated CSS for you.  We've added support for Jade to compile the markup
 
-#Workflow Overview
+## Workflow Overview
 
 The gulpfile is the engine of the workflow.  It does the following:
 
@@ -15,7 +15,7 @@ The gulpfile is the engine of the workflow.  It does the following:
 * Send test emails to any inbox via [Mailgun](http://mailgun.com)
 * Delivers email to directly to a [Litmus](http://litmus.com) test
 
-#Design Resources
+## Design Resources
 
 * MailChimp's [Email Design Reference](http://templates.mailchimp.com/) is a very handy resource 
 * Read through [this](https://www.campaignmonitor.com/resources/will-it-work/guidelines/) and [this](https://litmus.com/blog/html-email-coding-101-infographic) before you start any coding. 
@@ -62,7 +62,7 @@ You can use this email creator workflow by creating your HTML in the `./src/html
 ## Compile Templates
 Running `gulp` from the terminal will build the new HTML email template into the `./output/` directory and the proceed to watch `./src/html/` and `./src/scss/` for any updates.
 
-You can write your templates in either Jade or HTML.  The default gulp task will look for Jade templates in `./src/jade/` and compile them to `./src/html`.  Any changes to HTML will build and reload via BrowserSync.  The worflow doesn't care if those changes come via compiling Jade or if you write the HTML manually.
+You can write your templates in either Jade or HTML.  The default gulp task will look for Jade templates in `./src/jade/` and compile them to `./src/html`.  Any changes to HTML will build and reload via BrowserSync.  The workflow doesn't care if those changes come via compiling Jade or if you write the HTML manually.
 
 The gulpfile has browsersync built in and will reload on any HTML or CSS edit, allowing you to focus on your code.
 
@@ -75,7 +75,7 @@ To run this, you can use the following command
 gulp send --template="compiled-template-name.html"
 ```
 
-##Testing
+## Testing
 
 Thanks to the awesome guys over [Litmus](http://litmus.com/), we can now throw your emails straight into their tests. You'll need an active [Litmus](http://litmus.com/) account (well worth the money!) and to get your [static email](https://litmus.com/static-email). Plug this into the `config.json` file and then run the following command.
 
@@ -84,6 +84,6 @@ gulp litmus --template="compiled-template-name.html"
 ```
 In a few seconds/minutes, you'll see the test appear in Limus for you!
 
-#Contributing#
+## Contributing
 
-Any contributions will be happily recieved. Just open an issue or make a pull request.
+Any contributions will be happily received. Just open an issue or make a pull request.
